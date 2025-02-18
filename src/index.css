@@ -1,0 +1,136 @@
+*{
+  margin: 0;
+  padding: 0;
+box-sizing: border-box;  
+}
+.navbar{
+  height: 70px;
+  background-color: cadetblue;
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  box-shadow:  2px 2px 3px rgba(0, 0, 0, 0.477);
+  position: sticky;
+  top: 0;
+}
+
+.navbar div{
+  display: flex;
+  align-items: center;
+  gap: 20px
+}
+.navbar form{
+  display: flex;
+  gap: 10px;
+}
+.navbar form input{
+width: 270px;
+height: 40px;
+border: 1px solid rgba(128, 128, 128, 0.272);
+outline: none;
+}
+.navbar form input:focus{
+  outline: 3px solid blueviolet;
+}
+
+.navbar form button{
+  width: 130px ;
+  height: 40px ;
+  border: none;
+  background-color: rgb(225, 65, 65);
+  color: white;
+  cursor: pointer;
+}
+
+.product-card{
+  width: 320px ;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 10px;
+ border: 2px solid rgba(128, 128, 128, 0.283); 
+ border-radius: 5px;
+ font-size: 1.2rem;
+}
+.product-card *{
+  margin-left: 10px;
+}
+.product-card img{
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-left: 0px;
+
+
+}
+
+.product-card button{
+  width: 120px ;
+  height: 40px ;
+  border: none;
+  color: white;
+
+  background-color: slateblue;
+}
+
+.product-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 30px 50px;
+}
+
+.modal{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 40%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+background-color: white;
+padding: 50px;
+border-radius: 10px;  
+border: 1px solid black;
+}
+.modal p:first-child{
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.cart-card{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  border: 2px solid gray;
+  background-color: aliceblue ;
+  margin: auto;
+  margin-top: 20px;
+}
+.cart-card img{
+  height: 100%;
+}
+.cart-card div{
+  display: flex;
+  gap: 10px;
+}
+
+.active{
+  background-color: red;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
