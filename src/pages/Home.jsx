@@ -1,4 +1,4 @@
-import { Outlet } from "react-router"
+
 import ProductList from "../components/ProductList"
 
 function Home({products}) {

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Modal from "./Modal";
+import { Link } from "react-router";
 
 function ProductCard({ title, price, image, id }) {
   const [showModal, setShowModal] = useState("");
@@ -29,8 +30,8 @@ function ProductCard({ title, price, image, id }) {
     <>
       {showModal ? <Modal text={showModal}  setShowModal={setShowModal}/> : null}
       <div className="product-card">
-        <img src={image} alt="" />
-        <h4>{title}</h4>
+   <img src={image} alt="" />
+        <Link to={"/product/"+id}>     <h4 style={{color:"blue"}}>{title}</h4></Link> 
         <p>{price} $</p>
         <button onClick={handleAddToCart}>add to cart</button>
       </div>
